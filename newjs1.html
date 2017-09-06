@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<h2>JavaScript in Head</h2>
+<img id="darling" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAekAAAAJDg1OTFhZTQ1LWViMWEtNGYwNi05ZmI0LTViMTJiNzU1NzgwNw.jpg" alt="Mona I Love You">
+<p id="demo"></p>
+<button onclick="myCrush()">wanna see mona???</button>    
+<script>
+   var crush={
+       type:"Girl Friend",
+       firstName:"Mownika Chowdary",
+       lastName:"Paladugu",
+       birthDate:"23/02/1994",
+       qualification:"Masters in Mech.",
+       sexAppeal:"Boobs",
+       rate:10
+   };
+function myCrush(){
+   document.body.style.backgroundImage="url('Mona.jpg')";
+}
+   
+    document.getElementById("demo").innerHTML="My recent crush name is "+" "+crush["firstName"]+" "+crush.lastName+" "+"and her DOB is"+" "+crush.birthDate+" "+"and i like her becoz she has a nice"+" "+crush.sexAppeal+" "+"and for this i am giving her"+" "+crush["rate"]+" "+"rating points.";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<head>
+<title>javascrpt</title>
+</head>
+<body>
+<p id="cherry"> Hello Darling!</p>
+<button id="mona">click to  know</button>
+<p id="jacob"> I Love You </p>
+<button id="manasa"> click to append</button>
+
+<script type="text/javascript">
+   document.getElementById("mona").onclick=function(){
+   //alert("Darling is your laptop password");
+   document.getElementById("cherry").innerHTML="Hello Cheryl";
+   }
+   document.getElementById("manasa").onclick=function(){
+   document.getElementById("jacob").innerHTML=document.getElementById("jacob").innerHTML+"cherry";
+   }
+ </script>
+</body>
+</html> 

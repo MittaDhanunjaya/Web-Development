@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sorting</title>
+    </head>
+<body>
+    <p id="demo"></p>
+    <button onclick="function1()">sort numerically</button>
+    <button onclick="function2()">sort alphabetically</button>
+    <script>
+        var friends=[12,21,121,18,418,421,412];
+        document.getElementById("demo").innerHTML=friends;
+    function function1(){
+        friends.sort();
+        document.getElementById("demo").innerHTML=friends;
+    }
+    function function2(){
+        friends.sort(function(a,b){return a-b;});
+        document.getElementById("demo").innerHTML=friends;
+    }    
+    </script></body></html>

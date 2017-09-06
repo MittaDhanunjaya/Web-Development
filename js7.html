@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+<title> game</title>
+</head>
+<body>
+<p> How many fingers am i holding up???</p>
+<p><input type="text" id="num">
+<button id="Guess">guess</button></p>
+<script type="text/javascript">
+document.getElementById("Guess").onclick=function(){
+var number=Math.floor((Math.random()*6));
+var x="";
+x=document.getElementById("num").value;
+if(x==number){
+alert("Nice-Guess");}
+else{
+alert("Wrong Guess... correct number is: "+number);
+}
+}
+</script>
+</body>
+</html>

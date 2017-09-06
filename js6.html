@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+<title> Login </title>
+</head>
+<body>
+<p>Username:
+<input type="text" id="user"> </p>
+<p>Password:
+<input type="password" id="pass"></p>
+<p><button id="log">log-in</button></p>
+<script type="text/javascript">
+document.getElementById("log").onclick=function(){
+var User="";
+User=document.getElementById("user").value;
+var Pass="";
+Pass=document.getElementById("pass").value;
+if(User==null&& Pass==null){
+alert("please enter something and try again");}
+if(User=="mitta"){
+if(Pass=="manasa"){
+alert("Log-in successful");}else{
+alert("User-name correct");
+alert("password in-correct");
+alert("log-in failed");}}else{
+alert("Username in-correct");
+alert("log-in failed");
+}
+}
+</script>
+</body>
+</html>
+
+
